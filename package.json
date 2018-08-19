@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "logrocket": "^0.6.16",
+    "logrocket-vuex": "0.0.3",
+    "raven-js": "^3.26.4",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
