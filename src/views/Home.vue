@@ -1,12 +1,11 @@
 <template>
   <div class="home">
     <h1>Sum: {{sumPrice}}</h1>
-    <ul>
-      <li v-for="todo in todos" :key="todo.id">
-        {{ todo.name }} {{ todo.price }}
+    <div>
+      <todo-item v-for="todo in todos" :key="todo.id" :name="todo.name" :price="todo.price">
         <button @click="removeTodoItem(todo.id)">x</button>
-      </li>
-    </ul>
+      </todo-item>
+    </div>
     <hr/>
     <input v-model="newTodo.name">
     <input v-model="newTodo.price" type="number">
@@ -18,8 +17,12 @@
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
 import { mapState, mapMutations, mapGetters } from 'vuex'
+import TodoItem from '@/components/TodoItem.vue'
 
 export default {
+  components: {
+    TodoItem
+  },
   name: 'home',
   data () {
     return {
