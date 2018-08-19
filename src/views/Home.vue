@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <h1>B</h1>
     <h1>Sum: {{sumPrice}}</h1>
     <div>
       <todo-item v-for="todo in todos" :key="todo.id" :name="todo.name" :price="todo.price">
