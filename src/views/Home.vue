@@ -8,9 +8,9 @@
       </todo-item>
     </div>
     <hr/>
-    <input v-model="newTodo.name">
-    <input v-model="newTodo.price" type="number">
-    <button @click="submitTodoItem">Add</button>
+    <input id="name" v-model="newTodo.name">
+    <input id="price" v-model="newTodo.price" type="number">
+    <button id="add" @click="submitTodoItem">Add</button>
   </div>
 </template>
 
